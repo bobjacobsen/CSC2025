@@ -1,4 +1,4 @@
-# csc-exercises
+# CSC2025
 Software Tools exercises for the [CERN School of Computing](http://csc.web.cern.ch)
 
 There are exercises for two tracks:

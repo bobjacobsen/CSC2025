@@ -19,11 +19,11 @@ If the sign-on fails, a possible cause is that your CERNbox account is not initi
 
 When you get to the "My Projects" screen, click the "Download project from git" link (a small cloud&arrow at the upper right) and enter
 ```
-  https://github.com/bobjacobsen/csc-exercises.git
+  https://github.com/bobjacobsen/CSC2025.git
 ```
 Click download _once_, then wait for the download to complete.  It might take a couple minutes. Please feel free to read ahead in the instructions!
 
-Once the download is complete, you'll see a "csc-exercises" directory.  Click that to open it. These exercises are in the DataScience directory within the csc-exercises directory you just checked out. Click that to open it and then click the "setup.ipynb" notebook to open it. That makes sure that a consistent set of necessary packages is installed so that you can do these exercises.  Click the ">" run button until you get to the end (the first block will likely produce a lot of output; let it run until the cursor moves to the 2nd block) Once that's successfully completed the imports in block two, you can close that window and go back to the directory listing.
+Once the download is complete, you'll see a "CSC2025" directory.  Click that to open it. These exercises are in the DataScience directory within the CSC2025 directory you just checked out. Click that to open it and then click the "setup.ipynb" notebook to open it. That makes sure that a consistent set of necessary packages is installed so that you can do these exercises.  Click the ">" run button until you get to the end (the first block will likely produce a lot of output; let it run until the cursor moves to the 2nd block) Once that's successfully completed the imports in block two, you can close that window and go back to the directory listing.
 
 ## About the Exercises
 
@@ -111,7 +111,7 @@ If you want to run these on your own machine, first install Jupyter Notebooks.  
 An updated PDF file is available for the [lecture](https://indico.cern.ch/event/1376644/contributions/5945384/) in Indico.
 
 We continually update the exercises in GitHub. After the School is complete, you can get the specific version we used by looking for the
-<a href="https://github.com/bobjacobsen/csc-exercises/releases/CSC-2024">CSC-2024</a> release tag.
+<a href="https://github.com/bobjacobsen/CSC2025/releases/CSC-2025">CSC-2025</a> release tag.
 
 
 ### Documentation

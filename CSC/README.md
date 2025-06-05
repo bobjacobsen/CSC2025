@@ -21,14 +21,14 @@ The -X option should forward X11 windows back to your machine.  (We use LXPlus b
 Then get a copy of the exercise files:
 ```
 cd ~
-git clone --filter=blob:none https://github.com/bobjacobsen/csc-exercises.git
+git clone --filter=blob:none https://github.com/bobjacobsen/CSC2025.git
 
 ```
 The `--filter=blob:none` option improves the speed of the download by bypassing older blobs of data. The history is still there, it'll just be downloaded only if you ask for it later.
 
 Do a bit of setup (this has to be done every time you login or open a new terminal window):
 ```
-cd csc-exercises/CSC
+cd CSC2025/CSC
 source setup
 ```
 
@@ -97,7 +97,7 @@ Depending on your level of experience, these are all optional.  People who just 
 If there are any last-minute corrections to the instructions,
 we will post them in the exercise room and on this [Google Doc](https://docs.google.com/document/d/1g3b2e7wf3mWaIZ4U6MkNR5B4fQuO71y6Q341LGs45HQ/edit?usp=sharing). To update your local copy of these exercises, do
 ```
-    cd ~/csc-exercises
+    cd ~/CSC2025
     git pull
     cd
 ```
@@ -112,7 +112,7 @@ Updated PDF files are available for
 We continually update the exercises in GitHub.
 After the School is complete, you can get the specific version we used
 by looking for the
-<a href="https://github.com/bobjacobsen/csc-exercises/releases/CSC-2024">CSC-2024</a> release tag.
+<a href="https://github.com/bobjacobsen/CSC2025/releases/CSC-2025">CSC-2025</a> release tag.
 
 ## General notes:
 
