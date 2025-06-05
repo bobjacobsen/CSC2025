@@ -1,0 +1,14 @@
+These are the files for the CSC exercises
+
+Structure:
+- "CSC" directory is meant to be checked out from git and symbolic-linked (or rsync'd to some home-visible directory)
+- For development, it's also symbolic-linked from the localhost home directory as CSC
+    
+cmt-dev-all.tgz contains
+- Linux-i686
+- Linux-x86_64
+- Darwin-PowerMacintosh
+
+Auxiliary holds extras:
+- Stats.java.phase9 is the best known solution to the tuning exercise
+- log.php goes to web root to allow logging

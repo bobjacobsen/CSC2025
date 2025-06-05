@@ -1,0 +1,33 @@
+# large file, only encountered at top level
+CSC.tar
+
+# produced during use
+*.class
+*~
+a.out
+gmon.out
+*.o
+*.so
+.DS_Store
+__pycache__
+
+# Jupyter caches - need to git rm -r --cached those already committed
+.ipynb_checkpoints
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# logging extra files
+Auxiliary/logging/.ipynb_checkpoints/
+Auxiliary/logging/log.json
+Auxiliary/logging/log*.txt
+
+# annoying alias artifact
+CSC/CSC
+
+# specific build artifacts
+CSC/TestSumPrimesCpp/SumPrimes
+CSC/TestSumPrimesCpp/TestSumPrimes
+CSC/TestSumPrimesCpp/refactored/SumPrimes
+CSC/TestSumPrimesCpp/refactored/TestSumPrimes
+
