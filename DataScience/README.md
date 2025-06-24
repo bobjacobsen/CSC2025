@@ -104,7 +104,7 @@ Pick one that sounds interesting and get as far as you can on it.  Don't worry a
 
 ## General Information
 
-If you want to run these on your own machine, first install Jupyter Notebooks.  There are several ways to do this, but perhaps the most straight-forward is to [use PIP](https://jupyter.org/install).  Then checkout the exercise material to your machine. During the CERN School, please use the head of the `master` branch.  After the School is over, you can checkout the `CSC-2024` tag to get exactly these exercises. Finally, run the top-level `setup` notebook to make sure you have the right libraries installed.
+If you want to run these on your own machine, first install Jupyter Notebooks.  There are several ways to do this, but perhaps the most straight-forward is to [use PIP](https://jupyter.org/install).  Then checkout the exercise material to your machine. During the CERN School, please use the head of the `master` branch.  After the School is over, you can checkout the `CSC-2025` tag to get exactly these exercises. Finally, run the top-level `setup` notebook to make sure you have the right libraries installed.
 
 ### Files
 
