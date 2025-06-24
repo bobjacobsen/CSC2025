@@ -105,10 +105,6 @@ and then refresh your web browser windows to pick up the new instructions.
 
 ## Files
 
-Updated PDF files are available for
-<a href="https://indico.cern.ch/event/1376644/contributions/5785536/">lecture 1</a> and
-<a href="https://indico.cern.ch/event/1376644/contributions/5785592/">lecture 2</a> in Indico.
-
 We continually update the exercises in GitHub.
 After the School is complete, you can get the specific version we used
 by looking for the
