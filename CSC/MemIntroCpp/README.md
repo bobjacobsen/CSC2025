@@ -42,54 +42,28 @@ If you open the source file in your favorite editor, you'll see that this is rea
 
 Programs two.cpp through twelve.cpp all take slightly different approaches and are meant to print similar, but not identical things.  Look through each of them and make a table of the answers to two questions for each one:
 
- - What will it print? I.e. will it print it's own number?
+ - What will it print? I.e. will it print its own number?
  - Are there any memory management errors in the program?
 
 Is it possible for a program with an error to still print the right answer? Which do that?
 
-Your table should look something like this. (We'll fill out the right 3 columns below)
+Your table should look something like this. (We'll fill out the right two columns below)
 <table border="1">
 <tr>
 <th>Name</th><th>Expected<br>Output</th>
 <th>Errors To <br/>Be Captured</th>
-<th>Run with<br/>MALLOC_CHECK_<br/>= 0</th>
-<th>Run wtih<br/>MALLOC_CHECK_<br/>= 1</th>
+<th>Run with just<br/>default checking<br/></th>
 <th>Run with<br/>Valgrind</th>
 </tr>
-<tr><td>One</td><td>1</td><td>None</td><td></td><td></td><td></td></tr>
-<tr><td>Two</td><td>2</td><td>??</td><td></td><td></td><td></td></tr>
-<tr><td>...</td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>...</td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>...</td><td></td><td></td><td></td><td></td><td></td></tr>
-<tr><td>Twelve</td><td>12, then 11, etc</td><td>??</td><td></td><td></td><td></td></tr>
+<tr><td>One</td><td>1</td><td>None</td><td></td><td></td></tr>
+<tr><td>Two</td><td>2</td><td>??</td><td></td><td></td></tr>
+<tr><td>...</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>...</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>...</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Twelve</td><td>12, then 11, etc</td><td>??</td><td></td><td></td></tr>
 </table>
 
-Once you have your list,
-
-```
-   export MALLOC_CHECK_=0
-```
-(the underscores are important), or if you're using a C-style shell do:
-```
-   setenv MALLOC_CHECK_ 0
-```
-
-and run each of the programs and see if the program's results agree with your predictions
-
-Even if a memory error doesn't cause trouble for the printout or prevent the program from terminating normally, we'd still like to find them and fix them before they bite somebody else. Doing it by inspecting the code is difficult, so we'd like automated help.
-
-Let's try the checks that the memory allocator can do on it's own.
-Do this:
-
-```
-   export MALLOC_CHECK_=1
-```
-(the underscores are important), or if you're using a C-style shell do:
-```
-   setenv MALLOC_CHECK_ 1
-```
-
-Now rerun each of the programs and figure out which errors are caught by this, and which are not.
+Once you have your table, run each of the programs and see if the program's results agree with your predictions
 
 To make running all the tests a little faster, we've provided a script that compiles and runs them all:
 
@@ -98,6 +72,8 @@ To make running all the tests a little faster, we've provided a script that comp
 ```
 
 (the quotes are important)
+
+Even if a memory error doesn't cause trouble for the printout or prevent the program from terminating normally, we'd still like to find them and fix them before they bite somebody else. Doing it by inspecting the code is difficult, so we'd like automated help.
 
 malloc is only involved with allocation and return of memory, and generally can't find problems with the actual memory references themselves. valgrind, on the other hand, can check every memory reference if told to. We'll try that next.
 
