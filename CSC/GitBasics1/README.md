@@ -119,7 +119,7 @@ option on the commit command which will commit all changed files:
 which does the add automatically for all changed files. You can also specify
 the files you want to commit on the command line, although that can get complicated:
 ```
-    git commit -a -m"Added lines at end" hello.txt
+    git commit -m"Added lines at end" hello.txt
 ```
 
 Finally, you
