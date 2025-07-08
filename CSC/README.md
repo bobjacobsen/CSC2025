@@ -67,9 +67,11 @@ We then move forward to a more significant example, the SumPrimes code from lect
 
 4: [TestSumPrimesJava](TestSumPrimesJava/README.md) - SumPrimes in Java
 
-5: [TestSumPrimesPy](TestSumPrimesPy/README.md) - SumPrimes in Python
+5: [TestSumPrimesPyUnit](TestSumPrimesPyUnit/README.md) - SumPrimes in Python using PyUnit
 
-6: [TestSumPrimesCpp](TestSumPrimesCpp/README.md) - SumPrimes in C++
+6: [TestSumPrimesPyTest](TestSumPrimesPyTest/README.md) - SumPrimes in Python using PyTest
+
+7: [TestSumPrimesCpp](TestSumPrimesCpp/README.md) - SumPrimes in C++
 
 ## Memory Issues
 
