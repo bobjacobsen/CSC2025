@@ -1,53 +1,55 @@
-## MemIntroCpp: Testing for C++ Memory Faults
+# MemIntroCpp: Testing for C++ Memory Faults
 
 Reminder: If there's been a correction to this exercise posted, update your local copy via [these instructions](https://docs.google.com/document/d/1g3b2e7wf3mWaIZ4U6MkNR5B4fQuO71y6Q341LGs45HQ/edit?usp=sharing) before proceeding.
 
 Goal: Gain some experience with types of memory faults and tools that can help with them.
 
-As you work through here, you may find some things that are puzzling.  It's OK to ask!  There are also some useful references in
-<a href="https://docs.google.com/document/d/1Jvb1zYRibzOw74VKnGsmTVfWkQcOxb_yc8JboebFDpA/edit#heading=h.dwvcizbspysp">The Bibliography</a>,
+As you work through here, you may find some things that are puzzling. It's OK to ask! There are also some useful references in
+[The Bibliography](https://docs.google.com/document/d/1Jvb1zYRibzOw74VKnGsmTVfWkQcOxb_yc8JboebFDpA/edit#heading=h.dwvcizbspysp),
 particularly the
-<a href="https://docs.google.com/document/d/1Jvb1zYRibzOw74VKnGsmTVfWkQcOxb_yc8JboebFDpA/edit#heading=h.dwvcizbspysp">section on "Memory Issues"</a>.
+[section on "Memory Issues"](https://docs.google.com/document/d/1Jvb1zYRibzOw74VKnGsmTVfWkQcOxb_yc8JboebFDpA/edit#heading=h.dwvcizbspysp).
 
 First, create a local copy of the exercise files.
-```
-    cd MemIntroCpp
-    source setup.sh
+
+```shell
+cd MemIntroCpp
+source setup.sh
 ```
 
 (Note to people using this on their own machines: This will overwrite your ~/.valgrind configuration file if you already have one)
 
-Three are twelve simple C++ programs in files named "one.cpp" through "twelve.cpp".
+Three are twelve simple C++ programs in files named `one.cpp` through `twelve.cpp`.
 
 To run the first one, do:
 
-```
-   g++ -g2 one.cpp
-   ./a.out
+```shell
+g++ -g2 one.cpp
+./a.out
 ```
 
-(The -g2 option ensures that debugging info is kept for later)
+(The `-g2` option ensures that debugging info is kept for later)
 
 It should almost immediately print a result and quit:
 
-```
-   % ./a.out
-   Hello World!
-   Value is 1
-   Done
-   %
+```shell
+% ./a.out
+Hello World!
+Value is 1
+Done
+%
 ```
 
 If you open the source file in your favorite editor, you'll see that this is really simple code.
 
-Programs two.cpp through twelve.cpp all take slightly different approaches and are meant to print similar, but not identical things.  Look through each of them and make a table of the answers to two questions for each one:
+Programs `two.cpp` through `twelve.cpp` all take slightly different approaches and are meant to print similar, but not identical things. Look through each of them and make a table of the answers to two questions for each one:
 
- - What will it print? I.e. will it print its own number?
- - Are there any memory management errors in the program?
+- What will it print? I.e. will it print its own number?
+- Are there any memory management errors in the program?
 
 Is it possible for a program with an error to still print the right answer? Which do that?
 
 Your table should look something like this. (We'll fill out the right two columns below)
+
 <table border="1">
 <tr>
 <th>Name</th><th>Expected<br>Output</th>
@@ -67,7 +69,7 @@ Once you have your table, run each of the programs and see if the program's resu
 
 To make running all the tests a little faster, we've provided a script that compiles and runs them all:
 
-```
+```shell
 ./all.sh "g++ -g2"
 ```
 
@@ -79,15 +81,15 @@ malloc is only involved with allocation and return of memory, and generally can'
 
 Rerun each program under the scrutiny of valgrind:
 
- ```
-   g++ -g2 one.cpp
-   valgrind ./a.out
- ```
+```shell
+g++ -g2 one.cpp
+valgrind ./a.out
+```
 
 Or, to run them all:
 
-```
+```shell
 ./all.sh "g++ -g2" valgrind
 ```
 
-Look at each output carefully to see what error(s) valgrind has found.  Did it find any that you missed? Did it miss any that you found?  It not only checks for validity of references, it also checks for a number of different kinds of memory leaks.
+Look at each output carefully to see what error(s) valgrind has found. Did it find any that you missed? Did it miss any that you found? It not only checks for validity of references, it also checks for a number of different kinds of memory leaks.

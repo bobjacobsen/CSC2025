@@ -1,20 +1,22 @@
-## Testing SumPrimes in Java
+# Testing SumPrimes in Java
 
 Reminder: If there's been a correction to this exercise posted, update your local copy via [these instructions](https://docs.google.com/document/d/1g3b2e7wf3mWaIZ4U6MkNR5B4fQuO71y6Q341LGs45HQ/edit?usp=sharing) before proceeding.
 
 Goal: Gain familiarity with a typical test framework
 
 First, set up the local environment:
+
+```shell
+cd TestSumPrimesJava
+source setup.sh
 ```
-   cd TestSumPrimesJava
-   source setup.sh
-```
-You'll find our sum-of-primes example in the file SumPrimes.java.  It's been recast as a Java class.
+
+You'll find our sum-of-primes example in the file SumPrimes.java. It's been recast as a Java class.
 To compile and run it, hopefully printing the sum of primes in the 1st 7 integers, do:
 
-```
-   ./build
-   java SumPrimes 7
+```shell
+./build
+java SumPrimes 7
 ```
 
 (As we discussed in class, the original code doesn't work correctly.)
@@ -25,8 +27,8 @@ The file TestSumPrimes.java contains the code to setup JUnit, plus a single test
 Take a look at it, and see if you understand what it contains.
 You can run it with
 
-```
-  java TestSumPrimes
+```shell
+java TestSumPrimes
 ```
 
 In its initial form, the test just makes sure that you can create a SumPrimes object, and passes.
@@ -36,10 +38,10 @@ There are commented-out tests that will check specific test cases,
 and therefore fail in the manner we discussed in lecture.
 Remove the leading // that comments out those lines, and watch the test fail when you run it:
 
-```
-  (edit the TestSumPrimes.java file)
-  ./build
-  java TestSumPrimes
+```shell
+(edit the TestSumPrimes.java file)
+./build
+java TestSumPrimes
 ```
 
 Isn't that "FAILURES!!!" message ugly? Now fix the bug(s) (See below for hints),
@@ -47,9 +49,9 @@ and see the lovely "OK" again.
 Finally, add a couple more tests to check other ranges.
 (The sum of primes from 1 to 20 inclusive is 77, for example)
 
-Hints:
+## Hints
 
- - It might be simpler to separate development
+- It might be simpler to separate development
 and test of the "is N prime?" code from the "check the sum over a range" code.
 That way you can test the two parts separately.
 In the "refactored" subdirectory we've provided a version of the SumPrimes.java
@@ -57,8 +59,8 @@ and TestSumPrimes.java files where that's been started.
 Copy those to the exercise directory if you'd like to see if that's an easier way to work.
 You might want to add additional tests to TestSumPrimes.java.
 
- - It's OK for a prime number to be divisible by 1.
+- It's OK for a prime number to be divisible by 1.
 
- - If you try to divide a prime number by itself, you'll find that the remainder is zero.
+- If you try to divide a prime number by itself, you'll find that the remainder is zero.
 
- - For more information on Java math routines like floor(...), round(...), sqrt(...), etc please see the <a href="http://download.oracle.com/javase/8/docs/api/java/lang/Math.html">Math class doc page</a>.
+- For more information on Java math routines like floor(...), round(...), sqrt(...), etc please see the [Math class doc page](http://download.oracle.com/javase/8/docs/api/java/lang/Math.html).
