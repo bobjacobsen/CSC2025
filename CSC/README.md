@@ -34,6 +34,8 @@ cd CSC2025/CSC
 source setup
 ```
 
+(The CSC2025's above are not a typo; we're re-using a repository)
+
 Finally, tell us who makes up your team, so we can find you later with updates (only needed once):
 
 ```shell
@@ -56,7 +58,7 @@ You can't break anything, so please feel free to experiment!
 
 ## Test Frameworks
 
-You should do all three of the these first exercises to work with test frameworks
+These first exercises are to work with test frameworks
 and make sure that your exercise environment is working correctly.
 Each is a little bit different. Please do
 
